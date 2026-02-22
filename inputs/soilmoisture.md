@@ -1,14 +1,19 @@
 # Soil Moisture Sensor
 ![Capacitive Soil Moisture Sensor](/images/SoilSensor.png)
 
-The SSD1306 is a tiny monochrome OLED display that talks over SPI or I²C. It’s bright, crisp, and perfect for showing a few lines of text, icons, or simple graphs. Power draw is low (no backlight), and updates are instant.
+A capacitive soil moisture sensor measures how much water is in the soil by detecting changes in the soil’s dielectric constant (its ability to store electrical charge).
 
+Water has a much higher dielectric constant than dry soil or air. The sensor contains two conductive plates (forming a capacitor). When placed in soil, the material between those plates is the soil itself. As moisture increases, the soil’s dielectric constant increases, which changes the capacitance value. The sensor’s circuitry converts this change in capacitance into a voltage (or digital signal) that can be read by a microcontroller.
+
+Unlike resistive soil moisture sensors, capacitive sensors do not rely on electrical current passing directly through the soil, which makes them more resistant to corrosion and generally more stable over time.
 
 <img src="https://github.com/IDMNYU/DM-GY-9103-L-Sensory-Ecology/blob/main/images/ESP32_Soil+Oled_bb.png" alt="ESP32 + Soil Moisture + OLED" width="420">
 
 
-## Arduino Code Example to Display Soil Moisture Data 
-This code example does a number of things. It reads the soil moisture raw data and displays it on the OLED display. When the moisture reaches a certain value, the display will instead show an animation (thanks to Adafruit!). This is just an example to think about different interactions and different triggers to environmental changes. 
+## Arduino Code Example to Read Soil Moisture via Serial Monitor 
+This code example reads the raw data from the soil moisture sensor and prints the values to the Serial Monitor. It provides a simple way to observe how the sensor readings change in real time as soil conditions shift. This basic output is useful for testing, calibration, and understanding the range of values your specific sensor produces before building more complex interactions.
+
+More water → higher dielectric constant → higher capacitance → different output signal.
 
 ```
 /*
