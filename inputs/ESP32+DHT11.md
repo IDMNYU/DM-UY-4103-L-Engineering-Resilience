@@ -1,5 +1,5 @@
 # DHT11 (Digital temperature & humidity)
-[![DHT11](/images/SNS-DH11-1.jpg)](https://components101.com/sensors/dht11-temperature-sensor)
+[![DHT11](https://github.com/IDMNYU/DM-GY-9103-L-Sensory-Ecology/blob/main/images/SNS-DH11-1.jpg)](https://components101.com/sensors/dht11-temperature-sensor)
 
 The DHT11 is a low-cost combined humidity and temperature sensor. Inside, a polymer capacitive element measures moisture in the air and a thermistor measures temperature. A small IC converts those readings to a digital signal on a single DATA line (a timing-based, one-wire-style protocol). It’s simple, cheap, and fine for basic indoor projects as long as you don’t expect accuracy nor speed.
 
