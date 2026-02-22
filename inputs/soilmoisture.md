@@ -13,6 +13,7 @@ Unlike **resistive** soil moisture sensors, capacitive sensors do not rely on el
 
 
 ## Arduino Code Example to Read Soil Moisture via Serial Monitor 
+<img src="/images/Arduino+sensor.png" alt="Arduino + Soil Moisture" width="420">
 This code example reads the raw data from the soil moisture sensor and prints the values to the Serial Monitor. It provides a simple way to observe how the sensor readings change in real time as soil conditions shift. This basic output is useful for testing, calibration, and understanding the range of values your specific sensor produces before building more complex interactions.
 
 _More water → higher dielectric constant → higher capacitance → different output signal._
