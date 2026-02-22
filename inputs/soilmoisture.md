@@ -5,6 +5,8 @@ A capacitive soil moisture sensor measures how much water is in the soil by dete
 
 Water has a much higher dielectric constant than dry soil or air. The sensor contains two conductive plates (forming a capacitor). When placed in soil, the material between those plates is the soil itself. As moisture increases, the soil’s dielectric constant increases, which changes the capacitance value. The sensor’s circuitry converts this change in capacitance into a voltage (or digital signal) that can be read by a microcontroller.
 
+<img src="/images/CapacitiveWarning.png" alt="Warning about how to install sensor" width="420">
+
 Unlike resistive soil moisture sensors, capacitive sensors do not rely on electrical current passing directly through the soil, which makes them more resistant to corrosion and generally more stable over time.
 
 <img src="https://github.com/IDMNYU/DM-GY-9103-L-Sensory-Ecology/blob/main/images/ESP32_Soil+Oled_bb.png" alt="ESP32 + Soil Moisture + OLED" width="420">
