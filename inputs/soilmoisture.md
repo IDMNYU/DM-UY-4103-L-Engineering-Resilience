@@ -1,5 +1,5 @@
 # Soil Moisture Sensor
-[![SSD1306 128×32 SPI OLED](https://github.com/IDMNYU/DM-GY-9103-L-Sensory-Ecology/blob/main/images/661-12.jpg)](https://www.adafruit.com/product/661)
+[![Cpacitive Soil Moisture Sensor](/images/SoilSensor.png)]
 
 The SSD1306 is a tiny monochrome OLED display that talks over SPI or I²C. It’s bright, crisp, and perfect for showing a few lines of text, icons, or simple graphs. Power draw is low (no backlight), and updates are instant.
 
