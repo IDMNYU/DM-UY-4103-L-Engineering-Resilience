@@ -32,7 +32,7 @@ SPK1→Speaker
 
 SPK2→Speaker
 
-<img src="/images/ESP32_DFRMp3_bb.png" alt="ESP32 + DFR Mp3 Mini Player" width="420">
+<img src="https://github.com/IDMNYU/DM-GY-9103-L-Sensory-Ecology/blob/main/images/ESP32_DFRMp3_bb.png" alt="ESP32 + DFR Mp3 Mini Player" width="420">
 
 ## Arduino Code 
 This code snippet uses the DFRobot DFPlayer Mini library but instead of using software serial (which you could probably need to use for most Arduino microcontroller) it uses hardware serial as the Nano ESP32 can handle true hardware serial communication in all of its digital pins, making it for a more reliable way to communicate with the mp3 player board. This code reads the first audio file it finds in its main folder and loops it every 6 seconds. For more instructions on setting up the SD card and files, please check out the [DFRobot wiki](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299). 
