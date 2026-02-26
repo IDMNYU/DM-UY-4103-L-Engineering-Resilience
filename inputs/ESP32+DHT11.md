@@ -32,8 +32,6 @@ If you have a bare 4-pin DHT11, add a 10 kΩ pull-up from DATA to VCC.
 ```
 
 #include <SPI.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 
