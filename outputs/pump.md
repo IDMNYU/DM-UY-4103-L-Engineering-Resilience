@@ -104,4 +104,6 @@ void loop() {
 ```
 ## Care & Maintenance 
 
-This circuit works only through ongoing care. The pump needs water in its reservoir, power must be readily available, and the sensor occasionally checked or recalibrated. Like many small infrastructures, this system relies on attention and maintenance to keep functioning. Energy, water, and the simple act of checking on the system are all part of a small network of care that keeps the plant, as well as the technology supporting it, alive.
+This circuit works only through ongoing care. The pump needs water in its reservoir, power must be readily available, and the sensor occasionally checked or recalibrated. Like many small infrastructures, this system relies on attention and maintenance to keep functioning. 
+
+Energy, water, and the simple act of checking on the system are all part of a small network of care that keeps the plant, as well as the technology supporting it, alive.
