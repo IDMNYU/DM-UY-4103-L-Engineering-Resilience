@@ -22,6 +22,8 @@ A 5V single-channel relay board is a small electronic module that allows a low-v
 
 ## Soil Moisture Triggering Water Pump 
 
+This simple circuit uses an Arduino Uno (could be any Arduino board or microcontroller), a soil moisture sensor, and three LED indicators to monitor and visualize plant health: green lights up when moisture is optimal, blue signals dry soil and activates a small DC submersible pump for watering, and red warns when the soil is too wet.
+
 <img src="/images/Uno_Leds_Pump_Relay_bb.png" alt="Fritzing Diagram of Arduino Uno with Soil Moisture sensor and 5V Relay board connected to Submersible DC Pump" width="450">
 
 
