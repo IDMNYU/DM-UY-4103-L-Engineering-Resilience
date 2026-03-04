@@ -1,3 +1,6 @@
+
+```
+
 // These constants won't change. They're used to give names to the pins used:
 const int soilPin = A0;  // Analog input pin that the potentiometer is attached to
 const int redPin = 5;    // Analog output pin that the LED is attached to
@@ -78,3 +81,5 @@ void loop() {
   // converter to settle after the last reading:
   delay(10000);
 }
+
+```
