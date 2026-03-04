@@ -4,14 +4,16 @@ A low-power 3.3–5V DC pump is a small electric pump designed to move water or 
 
 Because they operate at 3.3–5 volts, they are well suited for low-energy and intermittent systems, including solar-powered projects. Most are submersible, use a brushless motor, and draw relatively little current (often around 100–300 mA), making them easy to integrate into low-power electronics and creative prototypes. These pumps are popular in maker, art, and environmental projects where compact size and minimal energy consumption are important.
 
-## Typical features:
+### Typical features:
 
 - Operating voltage: 3.3–5V DC
 - Small, lightweight, and inexpensive
 - Submersible design with simple inlet/outlet tubing
 - Suitable for low-flow circulation rather than high-pressure pumping
 
+## 5V Relay 
 
+A 5V single-channel relay board is a small electronic module that allows a low-voltage signal—such as from a microcontroller like an Arduino or ESP32—to safely switch higher-power devices on or off, acting as an electrically controlled switch between the control circuit and the load.
 
 ```
 
