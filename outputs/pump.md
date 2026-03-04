@@ -16,6 +16,8 @@ Because they operate at 3.3–5 volts, they are well suited for low-energy and i
 
 ## 5V Relay 
 
+<img src="/images/Single-Channel-Relay-Module-Pinout.jpg" alt="5V 1 Channel Relay Board" width="350">
+
 A 5V single-channel relay board is a small electronic module that allows a low-voltage signal—such as from a microcontroller like an Arduino or ESP32—to safely switch higher-power devices on or off, acting as an electrically controlled switch between the control circuit and the load.
 
 ## Soil Moisture Triggering Water Pump 
@@ -28,34 +30,28 @@ const int greenPin = 7;  // Analog output pin that the LED is attached to
 const int bluePin = 6;   // Analog output pin that the LED is attached to
 const int pumPin = 8;
 
-
-int sensorValue = 0;  // value read from the pot
-int outputValue = 0;  // value output to the PWM (analog out)
+// Variable to contain sensor readings
+int sensorValue = 0;  // value read from the soil moisture sensor
 
 void setup() {
   // initialize serial communications at 9600 bps:
   Serial.begin(9600);
+
   pinMode(redPin, OUTPUT);
   pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
   pinMode(pumPin, OUTPUT);
-
-  
 }
 
 void loop() {
   // read the analog in value:
   sensorValue = analogRead(soilPin);
-  // map it to the range of the analog out:
-  //outputValue = map(sensorValue, 0, 1023, 0, 255);
-  // change the analog out value:
-  //analogWrite(analogOutPin, outputValue);
 
   // print the results to the Serial Monitor:
   Serial.print("sensor = ");
   Serial.println(sensorValue);
 
-  // soil moisture higher or equal 400 = dry
+  // soil moisture higher or equal 400 = DRY
 
   if (sensorValue >= 400) {
     digitalWrite(bluePin, HIGH);
@@ -91,14 +87,12 @@ void loop() {
   }
 
   else {
-    Serial.println("weirdness happening");
+    //catch whatever edge cases might not have been caught but previous if statement
+    Serial.println("weirdness happening");    
   }
 
-  //Serial.print("\t output = ");
-  //Serial.println(outputValue);
+  // wait 10 seconds before checking again. A more elegant solution would be to use millis() instead of delays
 
-  // wait 2 milliseconds before the next loop for the analog-to-digital
-  // converter to settle after the last reading:
   delay(10000);
 }
 
