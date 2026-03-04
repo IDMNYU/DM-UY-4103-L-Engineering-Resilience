@@ -22,6 +22,9 @@ A 5V single-channel relay board is a small electronic module that allows a low-v
 
 ## Soil Moisture Triggering Water Pump 
 
+<img src="/images/Uno_Leds_Pump_Relay_bb.png" alt="Fritzing Diagram of Arduino Uno with Soil Moisture sensor and 5V Relay board connected to Submersible DC Pump" width="400">
+
+
 ```
 // These constants won't change. They're used to give names to the pins used:
 const int soilPin = A0;  // Analog input pin that the potentiometer is attached to
