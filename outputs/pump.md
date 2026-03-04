@@ -1,11 +1,11 @@
 # DC Pump 
 
-A low-power 3.3–5V DC pump is a small electric pump designed to move water or other liquids using very little power. It typically runs directly from low-voltage sources such as microcontrollers (Arduino, ESP32), USB power, batteries, or small solar panels. These pumps are commonly used in DIY projects like small fountains, plant watering systems, hydroponics, cooling loops, or environmental sensing setups.
+A **low-power 3.3–5V DC pump** is a small electric pump designed to move water or other liquids using very little power. It typically runs directly from low-voltage sources such as microcontrollers (Arduino, ESP32), USB power, batteries, or small solar panels. These pumps are commonly used in DIY projects like small fountains, plant watering systems, hydroponics, cooling loops, or environmental sensing setups.
 
 <img src="/images/pump.jpg" alt="DC Submersible Water Pump" width="300">
 
 
-Because they operate at 3.3–5 volts, they are well suited for low-energy and intermittent systems, including solar-powered projects. Most are submersible, use a brushless motor, and draw relatively little current (often around 100–300 mA), making them easy to integrate into low-power electronics and creative prototypes. These pumps are popular in maker, art, and environmental projects where compact size and minimal energy consumption are important.
+Because they operate at 3.3–5 volts, they are well suited for low-energy and intermittent systems, including solar-powered projects. Most are **submersible**, use a **brushless motor**, and draw relatively little current (often around 100–300 mA), making them easy to integrate into low-power electronics and creative prototypes. These pumps are popular in maker, art, and environmental projects where compact size and minimal energy consumption are important.
 
 ### Typical features:
 
@@ -18,11 +18,11 @@ Because they operate at 3.3–5 volts, they are well suited for low-energy and i
 
 <img src="/images/Single-Channel-Relay-Module-Pinout.jpg" alt="5V 1 Channel Relay Board" width="350">
 
-A 5V single-channel relay board is a small electronic module that allows a low-voltage signal—such as from a microcontroller like an Arduino or ESP32—to safely switch higher-power devices on or off, acting as an electrically controlled switch between the control circuit and the load.
+A **5V single-channel relay board** is a small electronic module that allows a low-voltage signal, such as from a microcontroller like an Arduino or ESP32, to safely switch higher-power devices on or off, acting as an electrically controlled switch between the control circuit and the load.
 
 ## Soil Moisture Triggering Water Pump 
 
-This simple circuit uses an Arduino Uno (could be any Arduino board or microcontroller), a soil moisture sensor, and three LED indicators to monitor and visualize plant health: green lights up when moisture is optimal, blue signals dry soil and activates a small DC submersible pump for watering, and red warns when the soil is too wet.
+This simple circuit uses an Arduino Uno (could be any Arduino board or microcontroller), a soil moisture sensor, and three LED indicators to monitor and visualize plant health: $\color{green}{\textsf{lime}}$ lights up when moisture is optimal, $\color{green}{\textsf{blue}}$ signals dry soil and activates a small DC submersible pump for watering, and $\color{green}{\textsf{red}}$ warns when the soil is too wet.
 
 <img src="/images/Uno_Leds_Pump_Relay_bb.png" alt="Fritzing Diagram of Arduino Uno with Soil Moisture sensor and 5V Relay board connected to Submersible DC Pump" width="450">
 
