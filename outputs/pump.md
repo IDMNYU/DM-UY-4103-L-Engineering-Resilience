@@ -2,7 +2,7 @@
 
 A low-power 3.3–5V DC pump is a small electric pump designed to move water or other liquids using very little power. It typically runs directly from low-voltage sources such as microcontrollers (Arduino, ESP32), USB power, batteries, or small solar panels. These pumps are commonly used in DIY projects like small fountains, plant watering systems, hydroponics, cooling loops, or environmental sensing setups.
 
-Because they operate at 3.3–5 volts, they are well suited for low-energy and intermittent systems, including solar-powered projects. Most are submersible, use a brushless motor, and draw relatively little current (often around 100–300 mA), making them easy to integrate into low-power electronics and creative prototypes.
+Because they operate at 3.3–5 volts, they are well suited for low-energy and intermittent systems, including solar-powered projects. Most are submersible, use a brushless motor, and draw relatively little current (often around 100–300 mA), making them easy to integrate into low-power electronics and creative prototypes. These pumps are popular in maker, art, and environmental projects where compact size and minimal energy consumption are important.
 
 ## Typical features:
 
@@ -11,7 +11,6 @@ Because they operate at 3.3–5 volts, they are well suited for low-energy and i
 - Submersible design with simple inlet/outlet tubing
 - Suitable for low-flow circulation rather than high-pressure pumping
 
-These pumps are popular in maker, art, and environmental projects where compact size and minimal energy consumption are important.
 
 
 ```
