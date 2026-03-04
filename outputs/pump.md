@@ -17,6 +17,8 @@ A 5V single-channel relay board is a small electronic module that allows a low-v
 
 ```
 
+## Soil Moisture Triggering Water Pump 
+
 // These constants won't change. They're used to give names to the pins used:
 const int soilPin = A0;  // Analog input pin that the potentiometer is attached to
 const int redPin = 5;    // Analog output pin that the LED is attached to
