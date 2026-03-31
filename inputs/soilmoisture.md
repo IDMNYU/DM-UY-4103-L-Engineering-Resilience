@@ -20,10 +20,37 @@ _More water → higher dielectric constant → higher capacitance → different 
 
 ```
 // These constants won't change. They're used to give names to the pins used:
-const int analogInPin = A0;  // Analog input pin that the potentiometer is attached to
+const int analogInPin = A0;  // Analog input pin that the analog sensor is attached to
+
+int sensorValue = 0;  // value read from the soil moisture sensor
+
+void setup() {
+  // initialize serial communications at 9600 bps:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // read the analog in value:
+  sensorValue = analogRead(analogInPin);
+
+  // print the results to the Serial Monitor:
+  Serial.print("sensor = ");
+  Serial.println(sensorValue);
+  // wait 2 milliseconds before the next loop for the analog-to-digital
+  // converter to settle after the last reading:
+  delay(10);
+}
+```
+The code above is a standard piece of code to read almost all analog sensors. It is really useful to start with in order to familiarize yourself with the sensor itself and how it behaves under different conditions. Try probing dry and moist soil in order to understand what the raw values actually equate to and make yourself a bit of a map/legend to understand what those values actually mean. 
+
+After you have familiarized yourself, you can add an LED as an output (or other outputs of choice) in order to visualize and/or sonify the different value ranges. The code below uses the map() function in order to translate the range of sensor values (0,900) into analog output values (0,255) in order to dim an LED based on the soil moisture. You might need to replace the input values to the actual values you are getting from your sensor. 
+
+```
+// These constants won't change. They're used to give names to the pins used:
+const int analogInPin = A0;  // Analog input pin that the sensor is attached to
 const int analogOutPin = 9;  // Analog output pin that the LED is attached to
 
-int sensorValue = 0;  // value read from the pot
+int sensorValue = 0;  // value read from the soil moisture sensor
 int outputValue = 0;  // value output to the PWM (analog out)
 
 void setup() {
